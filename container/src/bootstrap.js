@@ -1,4 +1,5 @@
-import 'products/ProductsIndex'
-import 'cart/CartShow'
+import { mount as mountProduct} from 'products/ProductsIndex'
+import { mount as mountCart } from 'cart/CartShow'
 
-console.log('bootstrap')
+mountProduct(document.querySelector('#my-products'))
+mountCart(document.querySelector('#dev-cart'))
